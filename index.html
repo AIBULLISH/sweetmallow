@@ -100,7 +100,7 @@
       Alles ist vollständig anonym – auch deine Zahlung.<br>
       Die Webseite befindet sich aktuell im Aufbau.<br><br>
 
-      Kein OnlyFans, kein Abo.<br>
+      Kein OnlyFans oder ähnliches, kein Abo. Alles Privat.<br>
       <b>Einmal zahlen = lebenslang Zugang.</b><br><br>
 
       Dich erwarten exklusive Bilder & Videos.<br>
@@ -112,7 +112,7 @@
 
     <p>
       <b>Kein Krypto?</b><br>
-      Dann klick hier:<br>
+      Dann klick hier ( 50 € wählen ):<br>
       <a href="https://kartedirekt.de/zahlungsmittel/crypto-voucher" target="_blank">Crypto-Voucher</a><br><br>
 
       und sende es an:<br>
@@ -135,4 +135,25 @@
     <!-- HELIO CHECKOUT (zentriert) -->
     <div id="helioCheckoutContainer"></div>
 
-    <script type="module" cro
+    <script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.helioCheckout(
+          document.getElementById("helioCheckoutContainer"),
+          {
+            paylinkId: "6920c28f6f4bcf787e708758",
+            theme: {"themeMode":"dark"},
+            primaryColor: "#6400CC",
+            neutralColor: "#5A6578",
+          }
+        );
+      });
+    </script>
+
+    <p><b>Nach der Bezahlung erhältst du sofort alle weiteren Infos.</b></p>
+
+  </div>
+
+</body>
+</html>
