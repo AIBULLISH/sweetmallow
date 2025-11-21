@@ -1,108 +1,22 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SweetMallow VIP</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff0f6; /* sanftes Pastellrosa */
-      color: #333;
-      text-align: center;
-    }
+<!-- Helio Checkout -->
+<div id="helioCheckoutContainer"></div>
 
-    .container {
-      padding: 50px 20px;
-    }
+<script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #ff66b3; /* kräftiges Pink */
-    }
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    window.helioCheckout(
+      document.getElementById("helioCheckoutContainer"),
+      {
+        paylinkId: "6920c28f6f4bcf787e708758",
+        theme: {"themeMode":"dark"},
+        primaryColor: "#6400CC",
+        neutralColor: "#5A6578",
+      }
+    );
+  });
+</script>
 
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 0 auto 30px auto;
-      color: #555;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #ff99cc;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: background-color 0.3s, transform 0.2s;
-      margin-bottom: 30px;
-    }
-
-    .btn:hover {
-      background-color: #ffb3d9;
-      transform: translateY(-2px);
-    }
-
-    .image-placeholder {
-      width: 300px;
-      height: 300px;
-      background-color: #ffe6f2;
-      border-radius: 50%;
-      margin: 0 auto 30px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ff66b3;
-      font-weight: bold;
-      font-size: 1.1em;
-      border: 2px dashed #ff99cc;
-    }
-
-    /* Optional: Helio Checkout zentrieren */
-    #helioCheckoutContainer {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="image-placeholder">
-      Hier kommt dein Bild
-    </div>
-    <h1>Herzlich willkommen!</h1>
-    <p>
-      Mein Name ist <strong>SweetMallow</strong>.<br>
-      Willst du mehr sehen? Dann komm auf meinen <strong>VIP-Telegram-Account</strong>.<br>
-      Du hast noch kein Telegram? Kein Problem! Sichere dir jetzt einen der <strong>limitierten Plätze</strong> für mein riesiges Projekt, das sich noch im Aufbau befindet.<br>
-      Kein Abo – <strong>einmal zahlen, lebenslangen Zugang erhalten</strong>.<br>
-      Wer bereits Zugang über Telegram hat, kann später problemlos hin- und herschalten.
-    </p>
-    <a href="https://t.me/deinVIPlink" class="btn">Zum VIP Telegram</a>
-
-    <!-- Helio Checkout -->
-    <div id="helioCheckoutContainer"></div>
-    <script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.helioCheckout(
-          document.getElementById("helioCheckoutContainer"),
-          {
-            paylinkId: "6920bf78310a777c39d5f328",
-            theme: {"themeMode":"dark"},
-            primaryColor: "#ff66b3", // Farbe angepasst an Frauenfreundliches Theme
-            neutralColor: "#5A6578",
-          }
-        );
-      });
-    </script>
-  </div>
-</body>
-</html>
+<p style="margin-top: 20px; font-size: 1.1em; color: #555;">
+  Nach der Bezahlung bekommst du alles Weitere zugeschickt.
+</p>
