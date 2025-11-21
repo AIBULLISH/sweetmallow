@@ -1,22 +1,122 @@
-<!-- Helio Checkout -->
-<div id="helioCheckoutContainer"></div>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetMellow VIP</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff0f6;
+      color: #333;
+      text-align: center;
+    }
 
-<script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+    .container {
+      padding: 50px 20px;
+    }
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    window.helioCheckout(
-      document.getElementById("helioCheckoutContainer"),
-      {
-        paylinkId: "6920c28f6f4bcf787e708758",
-        theme: {"themeMode":"dark"},
-        primaryColor: "#6400CC",
-        neutralColor: "#5A6578",
-      }
-    );
-  });
-</script>
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      color: #ff66b3;
+    }
 
-<p style="margin-top: 20px; font-size: 1.1em; color: #555;">
-  Nach der Bezahlung bekommst du alles Weitere zugeschickt.
-</p>
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+      color: #555;
+    }
+
+    .image-placeholder {
+      width: 300px;
+      height: 300px;
+      background-color: #ffe6f2;
+      border-radius: 50%;
+      margin: 0 auto 30px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff66b3;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: 2px dashed #ff99cc;
+    }
+
+    #helioCheckoutContainer {
+      max-width: 400px;
+      margin: 40px auto;
+    }
+
+    .crypto-link {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #d63384;
+      font-weight: bold;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="image-placeholder">
+      Hier kommt dein Bild
+    </div>
+
+    <h1>Herzlich willkommen!</h1>
+
+    <p>
+      Mein Name ist <strong>SweetMellow</strong>.<br><br>
+
+      Hier ist alles vollkommen <strong>anonym</strong> – sogar deine Zahlung.<br><br>
+
+      Meine Webseite ist aktuell noch im Aufbau.<br>
+      Kein OnlyFans, kein Abo, kein Stress.<br><br>
+
+      Was dich erwartet?<br>
+      <strong>Bilder und Videos</strong> – exklusiv, hochwertig und limitiert.<br><br>
+
+      Die Plätze sind begrenzt, um eine saubere Qualität zu gewährleisten.<br>
+      Nach dem Start ist <strong>kein Kauf mehr möglich</strong>.<br><br>
+
+      Mit einer einzigen Zahlung erhältst du <strong>lebenslangen Zugang</strong>.<br><br>
+
+      Du hast kein Krypto?<br>
+      Dann schick es mir völlig anonym hier:<br>
+      <a href="#" class="crypto-link">(hier kommt dein Link)</a><br><br>
+
+      Du willst nicht warten?<br>
+      Dann komm direkt in meinen <strong>VIP Telegram Account</strong> – später kannst du jederzeit auf die Webseite wechseln.
+    </p>
+
+    <!-- Helio Checkout -->
+    <div id="helioCheckoutContainer"></div>
+
+    <script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.helioCheckout(
+          document.getElementById("helioCheckoutContainer"),
+          {
+            paylinkId: "6920c28f6f4bcf787e708758",
+            theme: {"themeMode":"dark"},
+            primaryColor: "#6400CC",
+            neutralColor: "#5A6578",
+          }
+        );
+      });
+    </script>
+
+    <p style="margin-top: 20px; font-size: 1.1em; color: #555;">
+      Nach der Bezahlung bekommst du alles Weitere zugeschickt.
+    </p>
+
+  </div>
+</body>
+</html>
