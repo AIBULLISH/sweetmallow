@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweetmellow – Premium</title>
+  <title>Sweetmellow – Black & Gold Premium</title>
 
   <style>
     body {
       margin: 0;
-      background: radial-gradient(circle at top, #2a002e, #0d0011, #000);
-      color: #ffb6e6;
+      background: #000;
+      color: #d4af37; /* Gold */
       font-family: "Arial", sans-serif;
       text-align: center;
       animation: fadeIn 1.5s ease;
@@ -23,97 +23,99 @@
     .round-image {
       width: 180px;
       height: 180px;
-      background: #ff66c4;
+      background: #111;
       border-radius: 50%;
-      margin: 30px auto 10px;
-      box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+      margin: 35px auto 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       font-size: 18px;
-      font-weight: bold;
+      color: gold;
       border: 4px solid gold;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.65);
     }
 
     .content-box {
-      background: rgba(255, 182, 230, 0.07);
+      background: rgba(255, 255, 255, 0.05);
       margin: 20px auto;
-      padding: 25px;
-      max-width: 700px;
+      padding: 30px;
+      max-width: 750px;
       border-radius: 25px;
-      backdrop-filter: blur(6px);
-      box-shadow: 0 0 25px rgba(255, 105, 180, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      animation: fadeInUp 1.7s ease;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+      animation: fadeUp 1.8s ease;
     }
 
-    @keyframes fadeInUp {
+    @keyframes fadeUp {
       from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
-      color: #ff89d6;
       font-size: 32px;
-      text-shadow: 0 0 10px rgba(255, 140, 220, 0.7);
+      color: gold;
+      text-shadow: 0 0 10px rgba(212,175,55,0.8);
     }
 
     a {
       color: gold;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
       transition: 0.3s;
     }
 
     a:hover {
-      text-shadow: 0 0 10px gold;
-    }
-
-    #helioCheckoutContainer {
-      margin-top: 25px;
+      text-shadow: 0 0 12px gold;
     }
 
     .gold-line {
-      width: 80%;
+      width: 85%;
       height: 2px;
       background: linear-gradient(to right, transparent, gold, transparent);
-      margin: 20px auto;
+      margin: 22px auto;
+    }
+
+    /* Helio zentriert */
+    #helioCheckoutContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- RUNDES BILD -->
+  <!-- Rundes Bild -->
   <div class="round-image">
     Dein Bild
   </div>
 
   <div class="content-box">
 
-    <h1>Herzlich willkommen, ich bin Sweetmellow 💗</h1>
+    <h1>Sweetmellow – Private Black & Gold Edition</h1>
 
     <p>
-      Alles ist völlig anonym – sogar deine Zahlung.<br>
-      Meine Webseite befindet sich gerade im Aufbau.<br><br>
+      Alles ist vollständig anonym – auch deine Zahlung.<br>
+      Die Webseite befindet sich aktuell im Aufbau.<br><br>
 
-      Kein OnlyFans oder ähnliches, kein Abo.<br>
-      <b>Einmal zahlen = lebenslanger Zugang.</b><br><br>
+      Kein OnlyFans, kein Abo.<br>
+      <b>Einmal zahlen = lebenslang Zugang.</b><br><br>
 
-      Dich erwarten exklusive Bilder und Videos.<br>
-      Die Plätze sind begrenzt, um Qualität zu sichern.<br>
+      Dich erwarten exklusive Bilder & Videos.<br>
+      Die Plätze bleiben streng limitiert für maximale Qualität.<br>
       <b>Nach dem Start ist kein Kauf mehr möglich.</b>
     </p>
 
     <div class="gold-line"></div>
 
     <p>
-      <b>Du hast kein Krypto?</b><br>
-      Dann klick hier: ( 50€ wählen )<br>
+      <b>Kein Krypto?</b><br>
+      Dann klick hier:<br>
       <a href="https://kartedirekt.de/zahlungsmittel/crypto-voucher" target="_blank">Crypto-Voucher</a><br><br>
 
-      Und schicke es mir an:<br>
+      und sende es an:<br>
       <b>yasminchat@proton.me</b>
     </p>
 
@@ -121,38 +123,16 @@
 
     <p>
       Du willst nicht warten?<br>
-      Dann komme jetzt in meinen  
+      Dann komm in meinen  
       <b style="color: gold;">VIP Telegram Account</b>.<br>
-      Später kannst du jederzeit zurück auf die Webseite wechseln.
+      Sobald die Webseite online ist, kannst du flexibel wechseln.
     </p>
 
     <div class="gold-line"></div>
 
-    <h2 style="color: gold;">Zahlung (anonym & sicher)</h2>
+    <h2 style="color: gold;">Zahlung (100% anonym & sicher)</h2>
 
-    <!-- HELIO CHECKOUT -->
+    <!-- HELIO CHECKOUT (zentriert) -->
     <div id="helioCheckoutContainer"></div>
 
-    <script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.helioCheckout(
-          document.getElementById("helioCheckoutContainer"),
-          {
-            paylinkId: "6920c28f6f4bcf787e708758",
-            theme: {"themeMode":"dark"},
-            primaryColor: "#6400CC",
-            neutralColor: "#5A6578",
-          }
-        );
-      });
-    </script>
-
-    <p><b>Nach der Bezahlung bekommst du alles Weitere zugeschickt.</b></p>
-
-  </div>
-
-</body>
-</html>
-
+    <script type="module" cro
